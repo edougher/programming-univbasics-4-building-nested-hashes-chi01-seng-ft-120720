@@ -23,7 +23,9 @@ def monopoly_with_third_tier
   # they'll guide you in how to modify what you just did to have more
   # complexity.
   monopoly = {:railroads => {}}
+  monopoly[:railroads] = { :pieces => 4 }
   monopoly[:railroads][:rent_in_dollars] = {}
+  monopoly[:railroads][:names] = {}
 monopoly[:railroads][:rent_in_dollars] = {:one_piece_owned => 25}
 monopoly[:railroads][:rent_in_dollars][:two_pieces_owned] = 50
 monopoly[:railroads][:rent_in_dollars][:three_pieces_owned] = 100
